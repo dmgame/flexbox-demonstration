@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FlexBox Tutorial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="message">
+    some warn
+  </div>
+  <form class="choose-role" name="choose-role">
+    <div class="col">
+      <div class="head">
+        <div class="checkbox-group">
+          <input type="radio" name="display" value="flex" id="flex">
+          <label for="flex">display: flex</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="display" value="inline-flex" id="inline-flex">
+          <label for="inline-flex">display: inline-flex</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="display" value="block" id="block" checked>
+          <label for="block">display: block</label>
+        </div>
+      </div>
+      <h6>flex-direction</h6>
+      <div class="direction">
+        <div class="checkbox-group">
+          <input type="radio" name="direction" value="row" id="row" checked disabled>
+          <label for="row">flex-direction: row</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="direction" value="row-reverse" id="row-reverse" disabled>
+          <label for="row-reverse">flex-direction: row-reverse</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="direction" value="column" id="column" disabled>
+          <label for="column">flex-direction: column</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="direction" value="column-reverse" id="column-reverse" disabled>
+          <label for="column-reverse">flex-direction: column-reverse</label>
+        </div>
+      </div>
+      <h6>flex-container height, min: 155px</h6>
+      <div class="input-group">
+        <input type="number" name="height" value="" disabled>
+      </div>
+    </div>
+    <div class="col">
+      <h6>justify-content</h6>
+      <div class="direction">
+        <div class="checkbox-group">
+          <input type="radio" name="justify" value="flex-start" id="flex-start" checked disabled>
+          <label for="flex-start">justify-content: flex-start</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="justify" value="flex-end" id="flex-end" disabled>
+          <label for="flex-end">justify-content: flex-end</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="justify" value="center" id="center" disabled>
+          <label for="center">justify-content: center</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="justify" value="space-around" id="space-around" disabled>
+          <label for="space-around">justify-content: space-around</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="justify" value="space-between" id="space-between" disabled>
+          <label for="space-between">justify-content: space-between</label>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h6>flex-wrap</h6>
+      <div class="direction">
+        <div class="checkbox-group">
+          <input type="radio" name="wrap" value="nowrap" id="nowrap" checked disabled>
+          <label for="nowrap">flex-wrap: nowrap</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="wrap" value="wrap" id="wrap" disabled>
+          <label for="wrap">flex-wrap: wrap</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="wrap" value="wrap-reverse" id="wrap-reverse" disabled>
+          <label for="wrap-reverse">flex-wrap: wrap-reverse</label>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h6>align-items</h6>
+      <input type="checkbox" name="alignItemsOnOff" id="alignItemsOnOff" value="" disabled>
+      <label for="alignItemsOnOff">align-items on/off</label>
+      <div class="align">
+        <div class="checkbox-group">
+          <input type="radio" name="items" value="flex-start" id="flex-start-items" disabled>
+          <label for="flex-start-items">align-items: flex-start</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="items" value="flex-end" id="flex-end-items" disabled>
+          <label for="flex-end-items">align-items: flex-end</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="items" value="center" id="center-items" disabled>
+          <label for="center-items">align-items: center</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="items" value="stretch" id="stretch-items" disabled checked>
+          <label for="stretch-items">align-items: stretch</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="items" value="baseline" id="baseline-items" disabled>
+          <label for="baseline-items">align-items: baseline</label>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h6>align-content</h6>
+      <input type="checkbox" name="alignContentOnOff" id="alignContentOnOff" value="" disabled>
+      <label for="alignContentOnOff">align-content on/off</label>
+      <div class="align">
+        <div class="checkbox-group">
+          <input type="radio" name="content" value="flex-start" id="flex-start-content" disabled>
+          <label for="flex-start-content">align-content: flex-start</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="content" value="flex-end" id="flex-end-content" disabled>
+          <label for="flex-end-content">align-content: flex-end</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="content" value="center" id="center-content" disabled>
+          <label for="center-content">align-content: center</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="content" value="stretch" id="stretch-content" disabled checked>
+          <label for="stretch-content">align-content: stretch</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="content" value="space-around" id="space-around-content" disabled>
+          <label for="space-around-content">align-content: space-around</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="radio" name="content" value="space-between" id="space-between-content" disabled>
+          <label for="space-between-content">align-content: space-between</label>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="flex-container">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+    <div class="box box7">7</div>
+    <div class="box box8">8</div>
+    <div class="box box9">9</div>
+    <div class="box box10">10</div>
+  </div>
+  <script src="flex.js"></script>
+</body>
+</html>
