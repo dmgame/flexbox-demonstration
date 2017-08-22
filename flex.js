@@ -22,9 +22,13 @@ function showMeesage(el){
         element.classList.add('warning');
         return this;
     }
-    this.error = () => {
-        element.classList.add('error');
-        return this;        
+    // this.error = () => {
+    //     element.classList.add('error');
+    //     return this;
+    // }
+
+    this.newmethod = () => {
+        console.log('new method');
     }
 
     this.removeClass = () => {
