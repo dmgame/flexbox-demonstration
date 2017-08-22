@@ -31,6 +31,10 @@ function showMeesage(el){
         console.log('new method');
     }
 
+    this.second = () => {
+        console.log('add something new');
+    }
+
     this.removeClass = () => {
         if (element.classList.contains('warning')) element.classList.remove('warning');
         if (element.classList.contains('error')) element.classList.remove('error');
